@@ -20,3 +20,6 @@ Route::get('/', [Pgcontroller::class, 'inicio']);
 Route::get('felipe', function () { return view('meuestudo'); });
 
 Route::get('profile', function () { return view('profile'); });
+Route::get('cadastro', function () { return view('cadastro'); });
+Route::get('controle', function () { return view('controle'); });
+
