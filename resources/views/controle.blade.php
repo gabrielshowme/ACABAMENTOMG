@@ -15,67 +15,112 @@
             </nav>
         </div><!-- End Page Title -->
 
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cadastro de mercadoria</h5>
-              
+        <div class="col-lg-10">
 
-              <!-- Custom Styled Validation with Tooltips -->
-              <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltip01" class="form-label">Nome da Sacola:</label>
-                  <input type="text" class="form-control" id="validationTooltip01" placeholder="Ex: Lemonbee" required>
-                  <div class="valid-tooltip">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltip02" class="form-label">Quantidade:</label>
-                  <input type="text" class="form-control" id="validationTooltip02" placeholder="Unidade" required>
-                  <div class="valid-tooltip">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltipUsername" class="form-label">Gráfica:</label>
-                  <div class="input-group has-validation">
-                    <!--<span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>-->
-                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                    <div class="invalid-tooltip">
-                      Please choose a unique and valid username.
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Controle de Mercadoria</h5>
+
+                  <form class="row g-3">
+
+                      <div class="col-md-12">
+                          <label for="inputName5" class="form-label">Nome da Sacola:</label>
+                          <input type="text" class="form-control" id="inputName5">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="inputEmail5" class="form-label">Quantidade:</label>
+                          <input type="text" class="form-control" id="inputEmail5">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="inputPassword5" class="form-label">Gráfica</label>
+                          <input type="text" class="form-control" id="inputPassword5">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Tamanho:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected="">Selecione:.</option>
+                            <option>PP</option>
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                            <option>GG</option>
+                        </select>
                     </div>
+
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Tipo:</label>
+                      <select id="inputState" class="form-select">
+                          <option selected="">Selecione:.</option>
+                          <option>Alça Colada</option>
+                          <option>Gorgurão</option>
+                          <option>Cordão</option>
+                          <option>Cordão Torcido</option>                        
+                      </select>
                   </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Tipo</label>
+                    <select id="inputState" class="form-select">
+                        <option selected="">Selecione:.</option>
+                        <option>1 Folha</option>
+                        <option>2 Folhas Lado A e B</option>
+                        
+                        <option>2 Folhas</option>
+                        
+                    </select>
+                  <div class="col-md-10">
+                    <label for="testo" class="form-label">Texto:</label>
+                    <textarea class="form-control" style="height: 100px"></textarea>
+                    
                 </div>
-                <div class="col-md-6 position-relative">
-                  <label for="validationTooltip03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationTooltip03" required>
-                  <div class="invalid-tooltip">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-3 position-relative">
-                  <label for="validationTooltip04" class="form-label">Tamanho:</label>
-                  <select class="form-select" id="validationTooltip04" required>
-                    <option selected disabled value="">Escolha:</option>
-                    <option>PP</option>
-                    <option>P</option>
-                    <option>M</option>
-                    <option>G</option>
-                  </select>
-                  <div class="invalid-tooltip">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3 position-relative">
-                  <label for="validationTooltip05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationTooltip05" required>
-                  <div class="invalid-tooltip">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
+
+
+
+
+
+
+
+
+                      <!--<div class="col-12">
+                              <label for="inputAddress5" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddres5s"
+                                  placeholder="1234 Main St">
+                          </div>
+                          <div class="col-12">
+                              <label for="inputAddress2" class="form-label">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2"
+                                  placeholder="Apartment, studio, or floor">
+                          </div>
+                          <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                  <option selected="">Choose...</option>
+                                  <option>...</option>
+                              </select>
+                          </div>
+                          <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <div class="col-12">
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                  </label>
+                              </div>
+                          </div>-->
+                          <div class="text-center">
+                              <button type="submit" class="btn btn-primary">Enviar</button>
+                              <button type="reset" class="btn btn-secondary">Reset</button>
+                          </div>
+                  </form>
+
+              </div>
+          </div>                             
               </form><!-- End Custom Styled Validation with Tooltips -->
 
 

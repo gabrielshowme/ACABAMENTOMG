@@ -21,7 +21,7 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Dados do Funcionário</h5>
+                            <h5 class="card-title">Dados do Funcionário:</h5>
 
                             <form class="row g-3">
 
@@ -30,7 +30,7 @@
                                     <input type="text" class="form-control" id="inputName5">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="inputEmail5" class="form-label">RG</label>
+                                    <label for="inputEmail5" class="form-label">RG:</label>
                                     <input type="text" class="form-control" id="inputEmail5">
                                 </div>
                                 <div class="col-md-4">
@@ -43,7 +43,7 @@
                                 </div>
 
                                 <div class="col-md-8">
-                                    <label for="inputEmail5" class="form-label">Endereço</label>
+                                    <label for="inputEmail5" class="form-label">Endereço:</label>
                                     <input type="text" class="form-control" id="inputEmail5">
                                 </div>
                                 <div class="col-md-2">
