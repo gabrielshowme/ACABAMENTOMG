@@ -27,7 +27,7 @@ class UserController extends Controller
             return redirect()->back()->withInput()->withErrors(array('messege' => 'Usuario não localizado'));
         }
 
-        return view('controle');
+        return view('index');
 
     }
 

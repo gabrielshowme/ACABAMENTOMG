@@ -83,6 +83,14 @@
                                     <label for="inputPassword5" class="form-label">Falar com:</label>
                                     <input type="text" class="form-control" id="inputPassword5">
                                 </div>
+                                <div class="col-md-2">
+                                    <label for="inputPassword5" class="form-label">Recebimento:</label>
+                                    <input type="date" class="form-control" id="inputPassword5">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputPassword5" class="form-label">Entrega:</label>
+                                    <input type="date" class="form-control" id="inputPassword5">
+                                </div>
                                 <h5 class="card-title">Dados do Bancários</h5>
                                  <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Banco:</label>
@@ -142,8 +150,8 @@
                                         </div>
                                     </div>-->
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="reset" class="btn btn-secondary">Reset</button>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                        <button type="reset" class="btn btn-secondary">Limpar</button>
                                     </div>
                             </form>
 

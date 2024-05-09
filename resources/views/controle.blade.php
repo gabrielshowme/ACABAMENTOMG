@@ -46,8 +46,9 @@
                             <option>GG</option>
                         </select>
                     </div>
+                    
 
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                       <label for="inputState" class="form-label">Tipo:</label>
                       <select id="inputState" class="form-select">
                           <option selected="">Selecione:.</option>
@@ -57,8 +58,8 @@
                           <option>Cordão Torcido</option>                        
                       </select>
                   </div>
-                  <div class="col-md-4">
-                    <label for="inputState" class="form-label">Tipo</label>
+                  <div class="col-md-2">
+                    <label for="inputState" class="form-label">Tipo:</label>
                     <select id="inputState" class="form-select">
                         <option selected="">Selecione:.</option>
                         <option>1 Folha</option>
@@ -67,6 +68,15 @@
                         <option>2 Folhas</option>
                         
                     </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputDate" class="col-sm-2 col-form-label">Date</label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control">
+                    </div>
+                  
+                     </div>
+
                   <div class="col-md-10">
                     <label for="testo" class="form-label">Texto:</label>
                     <textarea class="form-control" style="height: 100px"></textarea>
