@@ -3,8 +3,10 @@
 use App\Http\Controllers\cadastroController;
 use App\Http\Controllers\pg\controller AS Pgcontroller;
 use App\Http\Controllers\{
+    SaveProduction,
     UserController,
-    UserForms
+    UserForms,
+    UserProduction
 };
 use Illuminate\Support\Facades\Route;
 
@@ -15,14 +17,15 @@ Route::get('/', function () { return view('login'); })->name('telaInicial');
 Route::get('index', function () { return view('index'); });
 
 // Pagina em branco
-Route::get('felipe', function () { return view('meuestudo'); });
 
 Route::get('profile', function () { return view('profile'); });
 
 
 
-//Cadastro de funcionário
-Route::get('cadastro', function () { return view('cadastro'); });
+//CADASTRO DE FUNCIONARIO
+//Route::get('cadastro', function () { return view('cadastro'); });
+Route::get('cadastro',[UserForms::class, 'cadastro']);
+Route::get('salvarFuncionario',[UserForms::class, 'salvarFuncionario']);
 
 
 
@@ -35,18 +38,21 @@ Route::get('/register',[UserController::class, 'register']);
 
 
 
-//Logout do sistema
+//LOGOUT DO SISTEMA
 Route::get('/sair',[UserController::class, 'sair']);
 
 
 
-//Login e Salvar no Banco
+//LOGIN E SALVAR NO BANCO
 Route::get('salvarUsuario',[UserController::class, 'salvarUsuario']);
 
 Route::post('/login',[UserController::class, 'login']);
 
-//Formulario
-Route::post('salvarFuncionario',[UserForms::class, 'salvarFuncionario']);
 
-//Controle
-Route::post('salvarSacola',[UserForms::class, 'salvarSacola']);
+//CONTROLE DE ESTOQUE
+Route::post('salvarSacola',[SaveProduction::class, 'salvarSacola']);
+
+
+//PRODUCAO
+Route::get('/producao',[UserProduction::class, 'producao']);
+

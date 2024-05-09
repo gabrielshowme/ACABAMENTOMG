@@ -16,6 +16,7 @@
 
         <section class="section">
             <div class="row">
+        
 
                 <div class="col-lg-12">
 
@@ -23,7 +24,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Dados do Funcionário:</h5>
 
-                            <form class="row g-3">
+                            <form class="row g-3" method="POST" action="{{ url('cadastro') }}"novalidate>
+                                @csrf
 
                                 <div class="col-md-12">
                                     <label for="inputName5" class="form-label">Nome:</label>
@@ -75,22 +77,15 @@
                                     <input type="text" class="form-control" id="inputPassword5">
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Telefone de Recado:</label>
                                     <input type="text" class="form-control" id="inputPassword5">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Falar com:</label>
                                     <input type="text" class="form-control" id="inputPassword5">
                                 </div>
-                                <div class="col-md-2">
-                                    <label for="inputPassword5" class="form-label">Recebimento:</label>
-                                    <input type="date" class="form-control" id="inputPassword5">
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="inputPassword5" class="form-label">Entrega:</label>
-                                    <input type="date" class="form-control" id="inputPassword5">
-                                </div>
+                                
                                 <h5 class="card-title">Dados do Bancários</h5>
                                  <div class="col-md-6">
                                     <label for="inputPassword5" class="form-label">Banco:</label>
@@ -108,6 +103,7 @@
                                   <label for="inputPassword5" class="form-label">Pix:</label>
                                   <input type="text" class="form-control" id="inputPassword5">
                               </div>
+                            
                               
 
 

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
-{
+{//SALVAR LOGIN E PASSWORD
     public function index()
     {
         dd('UserController@index');//'dd'faz debug

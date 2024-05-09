@@ -3,35 +3,40 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+//CADASTRAR COLADEIRAS
 class UserForms extends Controller
 
 {
+    public function cadastro()
+    {
+        return view('cadastro');
+    }
+    
+    //SALVAR FUNCIONARIO
     /* public function salvarFormulario(Request $requesicaoFormulario)
     {
-       $salvarNoBanco = new Usuarios();
+       $salvarFormulario = new Usuarios();
+       $salvarFormulario->nome = $requesicaoFormulario->nome;
+       $salvarFormulario->rg = $requesicaoFormulario->rg;
+       $salvarFormulario->dataExp = $requesicaoFormulario->dataExp;
+       $salvarFormulario->cpf = $requesicaoFormulario->cpf;
+       $salvarFormulario->endereco = $requesicaoFormulario->endereco;
+       $salvarFormulario->numero  = $requesicaoFormulario->numero;
+       $salvarFormulario->cep = $requesicaoFormulario->cep;
+       $salvarFormulario->cidade = $requesicaoFormulario->cidade;
+       $salvarFormulario->bairro = $requesicaoFormulario->bairro;
+       $salvarFormulario->uf = $requesicaoFormulario->uf;
+       $salvarFormulario->complemento = $requesicaoFormulario->complemento;
+       $salvarFormulario->telcel = $requesicaoFormulario->telcel;
+       $salvarFormulario->telrec = $requesicaoFormulario->telrec;
+       $salvarFormulario->falarcom = $requesicaoFormulario->falarcom;
+       $salvarFormulario->recebimento = $requesicaoFormulario->recebimento;
+       $salvarFormulario->entrega = $requesicaoFormulario->entrega;
 
-       $salvarNoBanco->nome = $requesicaoFormulario->nome;
-       $salvarNoBanco->rg = $requesicaoFormulario->rg;
-       $salvarNoBanco->dataExp = $requesicaoFormulario->dataExp;
-       $salvarNoBanco->cpf = $requesicaoFormulario->cpf;
-       $salvarNoBanco->endereco = $requesicaoFormulario->endereco;
-       $salvarNoBanco->numero  = $requesicaoFormulario->numero;
-       $salvarNoBanco->cep = $requesicaoFormulario->cep;
-       $salvarNoBanco->bairro = $requesicaoFormulario->bairro;
-       $salvarNoBanco->cidade = $requesicaoFormulario->cidade;
-       $salvarNoBanco->uf = $requesicaoFormulario->uf;
-       $salvarNoBanco->complemento = $requesicaoFormulario->complemento;
-       $salvarNoBanco->telcel = $requesicaoFormulario->telcel;
-       $salvarNoBanco->telrec = $requesicaoFormulario->telrec;
-       $salvarNoBanco->falarcom = $requesicaoFormulario->falarcom;
-       $salvarNoBanco->recebimento = $requesicaoFormulario->recebimento;
-       $salvarNoBanco->entrega = $requesicaoFormulario->entrega;
-
-       $salvarNoBanco->banco = $requesicaoFormulario->banco;
-       $salvarNoBanco->conta = $requesicaoFormulario->conta;
-       $salvarNoBanco->agencia = $requesicaoFormulario->agencia;
-       $salvarNoBanco->pix = $requesicaoFormulario->pix;
+       $salvarFormulario->banco = $requesicaoFormulario->banco;
+       $salvarFormulario->conta = $requesicaoFormulario->conta;
+       $salvarFormulario->agencia = $requesicaoFormulario->agencia;
+       $salvarFormulario->pix = $requesicaoFormulario->pix;
        
 
 
@@ -40,9 +45,9 @@ class UserForms extends Controller
 
 
 
-       $salvarNoBanco->password = bcrypt($requesicaoFormulario->password);
+       $salvarFormulario->password = bcrypt($requesicaoFormulario->password);
 
-       $salvarNoBanco->save();
+       $salvarFormulario->save();
 
        return view('login');
 
