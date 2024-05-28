@@ -24,7 +24,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Dados do Funcionário:</h5>
 
-                            <form class="row g-3" method="POST" action="{{ url('cadastro') }}"novalidate>
+                            <form class="row g-3" method="POST" action="{{ url('insertCadastro') }}"novalidate>
                                 @csrf
 
                                 <div class="col-md-12">

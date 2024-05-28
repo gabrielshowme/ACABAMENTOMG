@@ -11,6 +11,8 @@ class UserForms extends Controller
     {
         return view('cadastro');
     }
+
+    public 
     
     //SALVAR FUNCIONARIO
     /* public function salvarFormulario(Request $requesicaoFormulario)

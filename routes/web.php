@@ -56,3 +56,6 @@ Route::post('salvarSacola',[SaveProduction::class, 'salvarSacola']);
 //PRODUCAO
 Route::get('/producao',[UserProduction::class, 'producao']);
 
+//INSERIR CADASTRO
+//Route::get('/insertCadastro',[::class, 'insertCadastro']);
+
