@@ -45,7 +45,6 @@ Route::get('/sair',[UserController::class, 'sair']);
 
 //LOGIN E SALVAR NO BANCO
 Route::get('salvarUsuario',[UserController::class, 'salvarUsuario']);
-
 Route::post('/login',[UserController::class, 'login']);
 
 
