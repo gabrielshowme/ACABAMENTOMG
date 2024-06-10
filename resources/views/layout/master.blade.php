@@ -278,32 +278,34 @@
 
             <li class="nav-item">
                 <a class="nav-link " href="{{('index')}}">
-                    <i class="bi bi-grid"></i>
+                    <i class="ri-briefcase-2-fill"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
+
+            
             
             <li class="nav-item">
                 <a class="nav-link " href="{{('cadastro')}}">
-                    <i class="bi bi-grid"></i>
+                    <i class="bx bxs-briefcase"></i>
                     <span>Cadastro de Funcionário</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="{{('controle')}}">
-                    <i class="bi bi-grid"></i>
+                    <i class="bx bxs-box"></i>
                     <span>Controle de Estoque</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="{{('producao')}}">
-                    <i class="bi bi-grid"></i>
+                    <i class="bx bxl-product-hunt"></i>
                     <span>Produção</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="{{('profile')}}">
-                    <i class="bi bi-grid"></i>
+                    <i class="bx bxs-face"></i>
                     <span>Usuários</span>
                 </a>
             </li>

@@ -6,7 +6,8 @@ use App\Http\Controllers\{
     SaveProduction,
     UserController,
     UserForms,
-    UserProduction
+    UserProduction,
+    inserirCadastro
 };
 use Illuminate\Support\Facades\Route;
 
@@ -56,5 +57,6 @@ Route::post('salvarSacola',[SaveProduction::class, 'salvarSacola']);
 Route::get('/producao',[UserProduction::class, 'producao']);
 
 //INSERIR CADASTRO
-//Route::get('/insertCadastro',[::class, 'insertCadastro']);
+Route::get('/inserir',[inserirCadastro::class, 'inserir']);
+
 
