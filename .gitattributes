@@ -1,2 +1,15 @@
+<<<<<<< HEAD
+* text=auto
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+/.github export-ignore
+CHANGELOG.md export-ignore
+=======
 # Auto detect text files and perform LF normalization
 * text=auto
+>>>>>>> f119f0f23bc0fb72c7e5e8c68bd567d0d1a43c70
