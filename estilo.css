@@ -29,7 +29,11 @@ div.container{
     color: white
 }
 
+h1{
+    text-align: center;
+}
+
 p{
-    font-size: 1000px;
+    font-size: 30px;
     font-weight: 300;
 }
